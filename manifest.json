@@ -1,24 +1,38 @@
 {
-    "name": "Virginia Golf Club - Enhancer",
-    "description": "Enhances the Virginia Golf Club Website",
-    "version": "1.0",
-    "manifest_version": 3,
-    "homepage_url": "https://github.com/tim-bellette/virginia-gc",
-    "content_scripts": [
-        {
-            "matches": ["*://*.virginiagolf.com.au/members/bookings/open/event.msp*", "*://*.virginiagolf.com.au/views/members/booking/eventList.xhtml"],
-            "js": ["libs/jquery.js", "libs/date-fns.js", "src/events-inject.js"],
-            "run_at": "document_end"
-        },
-        {
-            "matches": ["*://*.virginiagolf.com.au/members/bookings/open/event.msp*"],
-            "css": ["src/styles.css"],
-            "run_at": "document_start"
-        }
-    ],
-    "icons": {
-        "50": "images/golf50.png",
-        "100": "images/golf100.png",
-        "128": "images/golf128.png"
+  "name": "Virginia Golf Club - Enhancer",
+  "description": "Enhances the Virginia Golf Club Website",
+  "version": "1.0",
+  "manifest_version": 3,
+  "homepage_url": "https://github.com/tim-bellette/virginia-gc",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.virginiagolf.com.au/members/bookings/open/event.msp*",
+        "*://*.virginiagolf.com.au/views/members/booking/eventList.xhtml"
+      ],
+      "js": [
+        "libs/jquery.js",
+        "libs/date-fns.js",
+        "libs/jquery.ui.position.js",
+        "libs/jquery.contextMenu.min.js",
+        "src/events-inject.js"
+      ],
+      "css": [
+          "src/events.css",
+          "libs/jquery.contextMenu.min.css"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["*://*.virginiagolf.com.au/members/bookings/open/event.msp*"],
+      "css": ["src/styles.css"],
+      "run_at": "document_start"
     }
+  ],
+  "icons": {
+    "50": "images/golf50.png",
+    "100": "images/golf100.png",
+    "128": "images/golf128.png"
+  }
 }
