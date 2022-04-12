@@ -57,8 +57,7 @@
       "after:bump": [
         "npm run build",
         "ls",
-        "cd ./dist/",
-        "ls",
+        "cd ./dist/ | ls",
         "cd .."
       ]
     },
