@@ -10,10 +10,10 @@ Currently not available on the Chrome Web Store, but can be loaded as an unpacke
 
 ### Option 1 - From Release
 
-1. Download latest release from https://github.com/tim-bellette/virginia-gc/releases
-2. Extract files to a directory e.g. `%USERPROFILE%\virginia-gc`
-3. Open chrome and navigate to `chrome://extensions/`
-4. Select `Load unpacked` and select the directory containing the extension
+1. Download latest release from https://github.com/tim-bellette/virginia-gc/releases.
+2. Extract files to a directory e.g. `%USERPROFILE%\virginia-gc`.
+3. Open chrome and navigate to `chrome://extensions/`.
+4. Select `Load unpacked` and select the directory containing the extension.
 
 ### Option 2 - From Source
 
@@ -21,5 +21,5 @@ Currently not available on the Chrome Web Store, but can be loaded as an unpacke
 ```shell
 npm run build
 ```
-2. Open chrome and navigate to `chrome://extensions/`
-3. Select `Load upnacked` and select the `dist` directory
+2. Open chrome and navigate to `chrome://extensions/`.
+3. Select `Load upnacked` and select the `dist` directory.
