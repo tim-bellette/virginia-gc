@@ -10,6 +10,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    
+    - name: Git Config
+      run: |
+        git config user.name "${GITHUB_ACTOR}"
+        git config user.email "${GITHUB_ACTION}@users.noreply.github.com"
 
     - name: Install Depenencies
       run: npm install
@@ -17,16 +22,8 @@ jobs:
     - name: Build
       run: npm run build
 
-    - name: Upload Build Artifact
-      uses: actions/upload-artifact@v3.0.0
-      with:
-        name: 'virginia-gc-extension.zip'
-        path: dist/
-        
-    - name: Git Config
-      run: |
-        git config user.name "${GITHUB_ACTOR}"
-        git config user.email "${GITHUB_ACTION}@users.noreply.github.com"
+    - name: Zip Folder
+      run: zip -r ${{ github.event.repository.name }}.zip . -x "dist/*"
     
     - name: Release
       run: npm run release
