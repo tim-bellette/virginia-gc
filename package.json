@@ -1,6 +1,6 @@
 {
   "name": "virginia-gc",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Virginia Golf Club Extension Suite",
   "main": "index.js",
   "scripts": {
