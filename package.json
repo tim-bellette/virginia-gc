@@ -56,9 +56,7 @@
     "hooks": {
       "after:bump": [
         "npm run build",
-        "cd dist",
-        "zip -r virginia-gc-v${version}.zip .",
-        "cd .."
+        "cd dist | zip -r virginia-gc-v${version}.zip ."
       ]
     },
     "verbose": true
