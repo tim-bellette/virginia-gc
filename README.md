@@ -22,4 +22,4 @@ Currently not available on the Chrome Web Store, but can be loaded as an unpacke
 npm run build
 ```
 2. Open chrome and navigate to `chrome://extensions/`.
-3. Select `Load upnacked` and select the `dist` directory.
+3. Select `Load unpacked` and select the `dist` directory.
