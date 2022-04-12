@@ -56,9 +56,7 @@
     "hooks": {
       "after:bump": [
         "npm run build",
-        "ls",
-        "cd ./dist/ | ls",
-        "cd .."
+        "cd ./dist/ && ls"
       ]
     },
     "verbose": true
