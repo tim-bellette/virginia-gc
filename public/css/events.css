@@ -1,0 +1,26 @@
+.data-title:before {
+    content: attr(data-menutitle);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #DDD;
+    padding: 2px;
+
+    font-weight: bold;
+}
+.data-title:first-child {
+    margin-top: 20px;
+}
+
+/* Book Me Button */
+.btn-book-me {
+    background-color: #4AA96C !important;
+}
+.teetime-day-table .cell {
+    border: 0 !important;
+}
+
+
+

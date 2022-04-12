@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "module": "ES6",
+        "target": "es6",
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "preserveConstEnums": true,
+        "importHelpers": true,
+        "sourceMap": true,
+        "rootDir": "./src",
+        "outDir": "./dist/js",
+        "noEmitOnError": true,
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    }
+}
