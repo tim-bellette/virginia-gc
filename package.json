@@ -56,7 +56,7 @@
     "hooks": {
       "after:bump": [
         "npm run build",
-        "cd ./dist/ && ls"
+        "cd ./dist/ && zip -r ${name}-${version}.zip ."
       ]
     },
     "verbose": true
