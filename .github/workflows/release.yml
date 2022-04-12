@@ -22,6 +22,13 @@ jobs:
       with:
         name: 'virginia-gc-extension.zip'
         path: dist/
+        
+    - name: Git Config
+      run: |
+        git config user.name "${GITHUB_ACTOR}"
+        git config user.email "${GITHUB_ACTION}@users.noreply.github.com"
     
     - name: Release
       run: npx release-it --ci --patch --no-npm --github.release --github.update --github.assets=*.zip --no-github.draft
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
