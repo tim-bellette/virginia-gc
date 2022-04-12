@@ -27,3 +27,4 @@ jobs:
       with:
         name: 'virginia-gc-extension.zip'
         path: dist/
+
