@@ -51,7 +51,7 @@
     },
     "plugins": {
       "@release-it/bumper": {
-        "out": "manifest.json"
+        "out": "public/manifest.json"
       }
     }
   }
