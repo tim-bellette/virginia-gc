@@ -24,4 +24,4 @@ jobs:
         path: dist/
     
     - name: Release
-      run: npm run release-it --ci --patch --no-npm --github.release --github.update --github.assets=*.zip --no-github.draft
+      run: npx release-it --ci --patch --no-npm --github.release --github.update --github.assets=*.zip --no-github.draft
