@@ -1,4 +1,4 @@
-name: Build
+name: Build and Release
 
 on:
   push:
@@ -27,4 +27,3 @@ jobs:
       with:
         name: 'virginia-gc-extension.zip'
         path: dist/
-
