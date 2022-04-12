@@ -15,6 +15,7 @@
   "author": "Tim Bellette",
   "license": "MIT",
   "devDependencies": {
+    "@release-it/bumper": "^3.0.1",
     "@symfony/webpack-encore": "^1.8.2",
     "@types/chrome": "^0.0.181",
     "@types/jquery": "^3.5.14",
@@ -47,6 +48,11 @@
     },
     "npm": {
       "publish": false
+    },
+    "plugins": {
+      "@release-it/bumper": {
+        "out": "manifest.json"
+      }
     }
   }
 }
