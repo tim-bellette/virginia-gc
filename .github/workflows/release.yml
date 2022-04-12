@@ -18,17 +18,8 @@ jobs:
 
     - name: Install Depenencies
       run: npm install
-
-    - name: Build
-      run: npm run build
-
-    - name: Zip Folder
-      run: |
-        cd dist
-        zip -r ${{ github.event.repository.name }}.zip .
-        cd ..
-    
-    - name: Release
+      
+    - name: Build and Release
       run: npm run release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
