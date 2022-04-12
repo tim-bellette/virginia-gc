@@ -9,24 +9,21 @@
     {
       "matches": [
         "*://*.virginiagolf.com.au/members/bookings/open/event.msp*",
-        "*://*.virginiagolf.com.au/views/members/booking/eventList.xhtml"
+        "*://*.virginiagolf.com.au/views/members/booking/eventList.xhtml*"
       ],
       "js": [
-        "libs/jquery.js",
-        "libs/date-fns.js",
-        "libs/jquery.ui.position.js",
-        "libs/jquery.contextMenu.min.js",
-        "src/events-inject.js"
+        "js/runtime.js",
+        "js/content_script.js"
       ],
       "css": [
-          "src/events.css",
-          "libs/jquery.contextMenu.min.css"
+          "css/events.css",
+          "js/content_script.css"
       ],
       "run_at": "document_end"
     },
     {
       "matches": ["*://*.virginiagolf.com.au/members/bookings/open/event.msp*"],
-      "css": ["src/styles.css"],
+      "css": ["css/styles.css"],
       "run_at": "document_start"
     }
   ],

@@ -1,0 +1,39 @@
+{
+  "name": "virginia-gc",
+  "version": "1.0.0",
+  "description": "Virginia Golf Club Extension Suite",
+  "main": "index.js",
+  "scripts": {
+    "clean-build": "npm run clean && npm run build",
+    "watch": "webpack --config webpack/webpack.config.js --watch",
+    "build": "webpack --config webpack/webpack.config.js",
+    "clean": "rimraf dist",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "Tim Bellette",
+  "license": "MIT",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^1.8.2",
+    "@types/chrome": "^0.0.181",
+    "@types/jquery": "^3.5.14",
+    "@types/jquery.contextmenu": "^1.7.35",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "rimraf": "^3.0.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.8",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3",
+    "webpack-cli": "^4.9.2",
+    "webpack-notifier": "^1.15.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.28.0",
+    "jquery": "^3.6.0",
+    "jquery-contextmenu": "^2.9.2",
+    "jquery.ui.position": "^1.11.4"
+  }
+}

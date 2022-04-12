@@ -13,3 +13,14 @@
 .data-title:first-child {
     margin-top: 20px;
 }
+
+/* Book Me Button */
+.btn-book-me {
+    background-color: #4AA96C !important;
+}
+.teetime-day-table .cell {
+    border: 0 !important;
+}
+
+
+
