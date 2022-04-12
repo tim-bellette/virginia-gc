@@ -1,7 +1,7 @@
 {
   "name": "Virginia Golf Club - Enhancer",
   "description": "Enhances the Virginia Golf Club Website",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "manifest_version": 3,
   "homepage_url": "https://github.com/tim-bellette/virginia-gc",
   "permissions": [
