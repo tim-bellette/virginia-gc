@@ -8,7 +8,7 @@
     "watch": "webpack --config webpack/webpack.config.js --watch",
     "build": "webpack --config webpack/webpack.config.js",
     "clean": "rimraf dist",
-    "tsc": "tsc"
+    "release-it": "release-it"
   },
   "keywords": [],
   "author": "Tim Bellette",
@@ -22,6 +22,7 @@
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.6.0",
+    "release-it": "^14.14.2",
     "rimraf": "^3.0.2",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.2.8",
