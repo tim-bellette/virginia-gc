@@ -58,7 +58,7 @@
         "npm run build",
         "ls",
         "cd ./dist/",
-        "zip -r virginia-gc-v${version}.zip .",
+        "ls",
         "cd .."
       ]
     },
