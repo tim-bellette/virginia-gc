@@ -57,9 +57,10 @@
       "after:bump": [
         "npm run build",
         "cd dist",
-        "zip -r virginia-gc.zip .",
+        "zip -r virginia-gc-v${version}.zip .",
         "cd .."
       ]
-    }
+    },
+    "verbose": true
   }
 }
