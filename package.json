@@ -42,7 +42,7 @@
     "github": {
       "release": true,
       "assets": [
-        "virginia-gc.zip"
+        "dist/*.zip"
       ]
     },
     "npm": {
