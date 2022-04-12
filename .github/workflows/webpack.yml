@@ -1,0 +1,29 @@
+name: Build
+
+on:
+  push:
+    branches:
+    - 'main'
+  pull_request:
+    branches:
+    - 'main'
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install Depenencies
+      run: npm install
+
+    - name: Build
+      run: npm run build
+
+    - name: Upload Build Artifact
+      uses: actions/upload-artifact@v3.0.0
+      with:
+        name: 'virginia-gc-extension.zip'
+        path: dist/
