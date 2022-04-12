@@ -24,3 +24,8 @@ jobs:
 
     - name: Zip Folder
       run: zip -r ${{ github.event.repository.name }}.zip dist/*
+    
+    - name: Release
+      run: npm run release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
