@@ -19,6 +19,7 @@ Currently not available on the Chrome Web Store, but can be loaded as an unpacke
 
 1. Download source code and build:
 ```shell
+npm install
 npm run build
 ```
 2. Open chrome and navigate to `chrome://extensions/`.
