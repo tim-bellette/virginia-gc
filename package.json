@@ -38,6 +38,9 @@
     "jquery-contextmenu": "^2.9.2",
     "jquery.ui.position": "^1.11.4"
   },
+  "overrides": {
+    "async": "3.2.3"
+  },
   "release-it": {
     "github": {
       "release": true,
