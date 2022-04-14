@@ -46,9 +46,6 @@
         "dist/*.zip"
       ]
     },
-    "git": {
-      "pushArgs": "--force"
-    },
     "npm": {
       "publish": false
     },
