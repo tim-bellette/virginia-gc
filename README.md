@@ -24,3 +24,4 @@ npm run build
 ```
 2. Open chrome and navigate to `chrome://extensions/`.
 3. Select `Load unpacked` and select the `dist` directory.
+ 
