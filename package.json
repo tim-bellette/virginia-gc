@@ -62,6 +62,7 @@
         "cd ./dist/ && zip -r ${name}-${version}.zip ."
       ]
     },
-    "verbose": true
+    "verbose": true,
+    "requireCleanWorkingDir": false
   }
 }
