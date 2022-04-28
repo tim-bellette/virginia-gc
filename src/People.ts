@@ -45,7 +45,9 @@ export class People {
                 ok: this.ok,
                 negative: this.negative
             }
-        }, () => {});
+        }, () => {
+            // do nothing
+        });
     }
 
     public getPlayingPreference(name: string): PlayingPreference | undefined {

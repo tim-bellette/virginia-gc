@@ -15,8 +15,8 @@ export class BookingHelper {
         People.LoadFromStorage((people) => {
             helper.people = people;
             helper.identifyBookings();
-            people.onStorageUpdated = (people: People) => {
-                helper.people = people;
+            people.onStorageUpdated = (newPeople: People) => {
+                helper.people = newPeople;
                 helper.refreshPeople();
             }
         });
@@ -25,7 +25,7 @@ export class BookingHelper {
     
 
     public identifyBookings() {
-        $('.booking-name').each((i, el) => {
+        $('.booking-name').each((_i, el) => {
             let $booking = $(el);
 
             // Set booking name
@@ -60,7 +60,7 @@ export class BookingHelper {
     public prettyListings() {
         if ($('.event-list').length) {
             setTimeout(() => {
-                $('a.eventStatusLocked').each((i, el) => {
+                $('a.eventStatusLocked').each((_i, el) => {
                     let $link = $(el);
                     let $linkText = $link.children('span');
                     let opening = $linkText.attr('title') || '';
@@ -86,7 +86,7 @@ export class BookingHelper {
                     }
                 });
             }, 500);
-        };
+        }
     }
 
 
@@ -104,8 +104,8 @@ export class BookingHelper {
                 'negative': { name: '😡 Not fun to play with' }
             },
             callback: (key: string, options: { $trigger: JQuery }) => {
-                let booking = this.getBooking(options.$trigger);                
-                this.people?.setPlayingPreference(booking.name, <PlayingPreference>key);
+                let newBooking = this.getBooking(options.$trigger);                
+                this.people?.setPlayingPreference(newBooking.name, <PlayingPreference>key);
 
                 this.styleCell(options.$trigger);
             }
@@ -124,7 +124,7 @@ export class BookingHelper {
     }
    
     private refreshPeople() {
-        $('.booking-name').each((i, el) => {
+        $('.booking-name').each((_i, el) => {
             let $booking = $(el);
             this.styleCell($booking);
         });
