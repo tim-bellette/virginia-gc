@@ -15,7 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "@release-it/bumper": "^3.0.1",
-    "@symfony/webpack-encore": "^1.8.2",
+    "@symfony/webpack-encore": "^2.0.0",
     "@types/chrome": "^0.0.181",
     "@types/jquery": "^3.5.14",
     "@types/jquery.contextmenu": "^1.7.35",
@@ -23,7 +23,7 @@
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.6.0",
-    "release-it": "^14.14.2",
+    "release-it": "^15.4.1",
     "rimraf": "^3.0.2",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.2.8",
