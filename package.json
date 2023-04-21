@@ -16,7 +16,7 @@
   "devDependencies": {
     "@release-it/bumper": "^3.0.1",
     "@symfony/webpack-encore": "^1.8.2",
-    "@types/chrome": "^0.0.181",
+    "@types/chrome": "^0.0.227",
     "@types/jquery": "^3.5.14",
     "@types/jquery.contextmenu": "^1.7.35",
     "copy-webpack-plugin": "^10.2.4",
